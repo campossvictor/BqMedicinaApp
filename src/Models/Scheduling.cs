@@ -10,7 +10,7 @@ public class Scheduling
 
     public int DoctorId { get; set; }
 
-    public int UserId { get; set; }
+    public int AttendantId { get; set; }
 
     public string? Notes { get; set; }
 
@@ -19,7 +19,7 @@ public class Scheduling
     public DateTime DateAppointment { get; set; }
 
 
-    public User Attendant { get; set; }
+    public Attendant Attendant { get; set; }
     public Patient Patient { get; set; }
     public Doctor Doctor { get; set; }
 }

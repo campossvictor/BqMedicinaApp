@@ -7,5 +7,10 @@ public class Doctor : User
     public int SpecialtyId { get; set; }
     
     public Specialty Specialty { get; set; }
-    public ICollection<Scheduling> Schedulings { get; set; }
+    public ICollection<Scheduling> Schedulings { get; set; } = new List<Scheduling>();
+
+    public Doctor()
+    {
+        IsDoctor = true;
+    }
 }

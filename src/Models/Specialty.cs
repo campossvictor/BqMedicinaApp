@@ -7,7 +7,6 @@ public class Specialty
     public string Name { get; set; }
 
     public string Description { get; set; }
-
     
     public ISet<Doctor> Doctors { get; set; }
 }

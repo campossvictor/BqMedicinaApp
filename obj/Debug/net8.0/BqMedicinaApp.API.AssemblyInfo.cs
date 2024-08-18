@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("cb2370ab-88a0-4fdf-a3f0-765a0c0bac46")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BqMedicinaApp.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdd7883a7d6c0a27cbb4ec8966cb632284b06253")]
 [assembly: System.Reflection.AssemblyProductAttribute("BqMedicinaApp.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BqMedicinaApp.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
