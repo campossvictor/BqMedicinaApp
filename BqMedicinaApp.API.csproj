@@ -22,10 +22,7 @@
     </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\Controllers\" />
     <Folder Include="src\Data\Mapping\" />
-    <Folder Include="src\Data\Repositories\Interfaces\Generic\" />
-    <Folder Include="src\Data\Repositories\Interfaces\Specific\" />
   </ItemGroup>
 
 </Project>

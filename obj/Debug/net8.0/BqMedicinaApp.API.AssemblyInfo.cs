@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BqMedicinaApp.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdd7883a7d6c0a27cbb4ec8966cb632284b06253")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c567bf5c38899af4f2e4bf2cda23e73a80f94626")]
 [assembly: System.Reflection.AssemblyProductAttribute("BqMedicinaApp.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BqMedicinaApp.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
