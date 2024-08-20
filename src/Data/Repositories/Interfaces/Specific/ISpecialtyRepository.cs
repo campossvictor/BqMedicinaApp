@@ -3,7 +3,7 @@ using BqMedicinaApp.API.src.Data.Repositories.Interfaces.Generic;
 
 namespace BqMedicinaApp.API.src.Data.Repositories.Interfaces.Specific;
 
-public interface ISpecifyRepository : IGenericCrudRepository<Specialty>
+public interface ISpecialtyRepository : IGenericCrudRepository<Specialty>
 {
     
 }

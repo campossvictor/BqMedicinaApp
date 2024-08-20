@@ -7,7 +7,7 @@ namespace BqMedicinaApp.API.src.Data.Repositories;
 
 public class GenericCrudRepository<T> : IGenericCrudRepository<T> where T : class
 {
-    private readonly AppDbContext _context;
+    protected readonly AppDbContext _context;
 
     public GenericCrudRepository(AppDbContext context)
     {
@@ -61,7 +61,7 @@ public class GenericCrudRepository<T> : IGenericCrudRepository<T> where T : clas
             throw new ArgumentNullException("Object entered in the parameter is null");
         }
 
-        _context.Update(Entity);
+        _context.Entry<T>(Entity).State = EntityState.Modified;
         await _context.SaveChangesAsync();
 
         return Entity;
