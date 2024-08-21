@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using BqMedicinaApp.API.src.Data;
 using BqMedicinaApp.API.src.Data.Repositories;
 using BqMedicinaApp.API.src.Data.Repositories.Interfaces.Generic;
@@ -6,7 +7,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 
 
 builder.Services.AddEndpointsApiExplorer();

@@ -14,7 +14,7 @@ public class GenericCrudRepository<T> : IGenericCrudRepository<T> where T : clas
         _context = context;
     }
     
-    public async Task<IEnumerable<T>>? GetAll()
+    public  async Task<IEnumerable<T>>? GetAll()
     {
         var Entities = await _context.Set<T>().ToListAsync();
 
@@ -61,7 +61,7 @@ public class GenericCrudRepository<T> : IGenericCrudRepository<T> where T : clas
             throw new ArgumentNullException("Object entered in the parameter is null");
         }
 
-        _context.Entry<T>(Entity).State = EntityState.Modified;
+        _context.Entry(Entity).State = EntityState.Modified;
         await _context.SaveChangesAsync();
 
         return Entity;

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BqMedicinaApp.API.Controllers;
 
 [ApiController]
-[Route("api/v1/[controller]")]
+[Route("api/v1/Patient")]
 public class PatientController : ControllerBase
 {
     private readonly IPatientRepository _patientRepository;
@@ -18,7 +18,8 @@ public class PatientController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Patient>>> GetAllPatient()
     {
-        var patients = await _patientRepository.GetAll();
+        var users = await _patientRepository.GetAll();
+        var patients = users.Where(u => u.IsPatient);
 
         if (patients is null)
         {

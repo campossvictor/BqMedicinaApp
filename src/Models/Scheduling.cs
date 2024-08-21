@@ -1,4 +1,5 @@
 using System.Security.Principal;
+using System.Text.Json.Serialization;
 
 namespace BqMedicinaApp.API.Models;
 
@@ -18,8 +19,10 @@ public class Scheduling
     
     public DateTime DateAppointment { get; set; }
 
-
+    [JsonIgnore]
     public Attendant Attendant { get; set; }
+    [JsonIgnore]
     public Patient Patient { get; set; }
+    [JsonIgnore]
     public Doctor Doctor { get; set; }
 }
